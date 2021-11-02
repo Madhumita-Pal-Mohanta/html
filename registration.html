@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<title> Registration Form </title>
+<link rel = "icon" href="images/title_logo.png"/>
+</head>
+<body>
+<a href="index.html"> HOME </a>
+<center>
+<h3 align="center">Registration Page</h3> <hr>
+ <form>
+  <fieldset>
+    <legend>LogIN information:</legend>
+    User ID:
+    <input type="text" name="UserID" placeholder="Give Mobile/E-mail ID"/>
+    <br/>
+    <br/>
+    Password:
+    <input type="text" name="pass" placeholder="Password"/>
+    <br><br>
+  <small>Password: Minimum 8 digit alpha numeric character</small><br><br>
+    
+  </fieldset>
+  <br/>
+  <br/>
+
+  <fieldset>
+    <legend>Personal information:</legend>
+    First Name:
+    <input type="text" name="firstname" >
+    &nbsp;  &nbsp;
+    Last Name:
+    <input type="text" name="lastname" >
+    <br/>
+    <br/>
+    Date of Birth:
+    <input type="date" name="birthday">
+    <br/>
+    <br/>
+    Gender:
+    &nbsp;
+    <input type="radio" name = "gender"/>
+    <label for="Male">Male</label>
+    <input type="radio" name = "gender"/>
+    <label for="Female">Female</label>
+    <input type="radio" name = "gender"/>
+    <label for="Other">Other</label><br>
+    <br/>
+    Last Qualification : 
+    <input list="browsers" name="browser">
+
+    <datalist id="browsers">
+      <option value="BTech/BE">
+      <option value="BCA">
+      <option value="MTech / M.E.">
+      <option value="MCA">
+      <option value="MSc ( Comp Sc)">
+    </datalist> 
+    <br/>
+    <br/>
+    Language known: 
+    <input type="checkbox"  name="lang1" >
+    <label for="lang1"> English</label>&nbsp;
+    <input type="checkbox"  name="lang2" >
+    <label for="lang2"> Hindi</label><br>
+    <br/>Phone: 
+    <input type="tel" name="phone" placeholder="987654321" pattern="[0-9]{10}">
+    <br/><br/>
+    <label for="Address">Premanent Address: </label><br/>
+
+    <textarea name="Address" rows="6" cols="25" placeholder="Address">
+     </textarea> 
+     <br/>
+     <br/>
+     <label for="occupation">Occupation:</label>
+  <select  name="occupation">
+    <option value="Public">Public</option>
+    <option value="Private">Private</option>
+    <option value="Govt">Govt</option>
+    <option value="others">Other</option>
+  </select>
+    
+
+  </fieldset>
+<br/>
+<br/>
+  <input type="submit" value="Register">
+  <input type="reset" value="Clear">
+</form> 
+</center>
+</body>
+</html>
+
